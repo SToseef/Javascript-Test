@@ -29,3 +29,12 @@ console.log(names);
 // const command forbids reassignment.
 // const is read-only variable
 // var allows variable that exists to be re-declared
+
+// Array test (ordered list)
+const myArray = ['dog', 1, true, 'cat'];
+//console.log(myArray[0]);
+myArray.push(55); //push adds to end of array
+myArray.pop(); //to remove last element
+myArray.splice(2, 1, false); //from index of 2 and delete 1 element
+console.log(myArray);
+console.log(myArray.length); // how many elements
