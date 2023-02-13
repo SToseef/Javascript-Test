@@ -38,3 +38,24 @@ myArray.pop(); //to remove last element
 myArray.splice(2, 1, false); //from index of 2 and delete 1 element
 console.log(myArray);
 console.log(myArray.length); // how many elements
+
+
+// User //
+
+const user = {
+    firstName: 'Teddy',
+    lastName: 'Lock',
+    activated: true
+  }
+  console.log(user);
+  
+  user.email = 'tlock@example.com'
+  console.log(user.email);
+  
+  user.lastName = 'Manning'
+  console.log(user.lastName);
+  
+  user.skills = ['HTML', 'CSS', 'JavaScript']
+  console.log(user.skills);
+  user['skills'][1] = 'SASS'  //replacing in array
+  console.log(user.skills);
