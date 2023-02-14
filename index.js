@@ -40,8 +40,7 @@ console.log(myArray);
 console.log(myArray.length); // how many elements
 
 
-// User //
-
+// JavaScript Objects //
 const user = {
     firstName: 'Teddy',
     lastName: 'Lock',
@@ -59,3 +58,70 @@ const user = {
   console.log(user.skills);
   user['skills'][1] = 'SASS'  //replacing in array
   console.log(user.skills);
+//
+
+// JavaScript Functions //
+function total(amount,tax){
+  console.log(amount + tax);
+};
+
+total(50,10);
+
+// function expression
+var sayGreeting = function(firstName){
+  console.log('Hello ' + firstName);
+};
+
+sayGreeting('Ginger');
+
+// arrow function
+const square = (number) => {
+  console.log(number * number);
+};
+
+square(10);
+
+
+// JavaScript Comparison Operators //
+console.log(10 == 10);
+console.log(10 == '10'); //converts string to number
+console.log(10 === '10'); //Extra = for additional strictness
+console.log(10 === 10);
+console.log(20 > 10);
+console.log(20 >= 10);
+console.log(10 < 10);
+console.log(10 <= 10);
+
+// JavaScript Logical Operators //
+console.log(20 > 10 && 10 < 50); // && if first and second condition are true then returns true
+console.log(true && true); //direct boolean.
+console.log(false || true);  //or operator. return true if one is true. false if all conditions are false.
+console.log(!false); //not operator !  (returns opposite value)
+let number;
+console.log(!number); //check if variable has been assigned a value. true if undefined or null.
+
+//JavaScript Conditionals (If Statements)//
+const number1 = 15;
+const number2 = 12;
+
+function compareNumbers(numberOne, numberTwo){
+  let message;
+
+  if(numberOne > numberTwo){
+    message = "Number one is greater than number two"
+
+  } else if (numberOne == numberTwo){
+
+    message = "both numbers are equal";
+
+  } else { 
+
+    message = "Number two is greater than number one";
+
+  }
+
+    return message;
+  
+}
+
+console.log(compareNumbers(number1, number2));
